@@ -5,7 +5,7 @@ import lombok.Getter;
 /**
  * 自定义错误码
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 @Getter

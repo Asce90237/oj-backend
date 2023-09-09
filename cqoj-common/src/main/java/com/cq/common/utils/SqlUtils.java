@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 /**
  * SQL 工具
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 public class SqlUtils {

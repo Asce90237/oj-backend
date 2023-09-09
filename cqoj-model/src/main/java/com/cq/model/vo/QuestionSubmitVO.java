@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 题目提交封装类
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/08/08
  */
 @Data

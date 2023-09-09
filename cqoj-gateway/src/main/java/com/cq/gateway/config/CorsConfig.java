@@ -13,7 +13,7 @@ import java.util.List;
 /**
  * 处理跨域
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/09/04
  */
 @Configuration

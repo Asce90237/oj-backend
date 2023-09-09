@@ -10,7 +10,7 @@ import java.io.Serializable;
 /**
  * 用户查询请求
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 @EqualsAndHashCode(callSuper = true)

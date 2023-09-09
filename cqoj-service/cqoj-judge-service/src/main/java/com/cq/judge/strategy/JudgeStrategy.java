@@ -6,7 +6,7 @@ import com.cq.model.dto.questionsubmit.JudgeInfo;
 /**
  * 判题策略
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/08/16
  */
 public interface JudgeStrategy {

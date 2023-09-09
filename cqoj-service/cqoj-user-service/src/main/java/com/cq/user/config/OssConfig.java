@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 阿里云文件系统配置
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/08/03
  */
 @Configuration

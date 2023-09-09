@@ -20,10 +20,10 @@ import static com.cq.common.constants.UserConstant.USER_LOGIN_STATE;
 /**
  * 用户服务
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
-@FeignClient(name = "cqoj-user-service", path = "/api/user/inner")
+@FeignClient(name = "cqoj-user-service", path = "/oj/user/inner")
 public interface UserFeignClient {
 
     @GetMapping("/get/id")

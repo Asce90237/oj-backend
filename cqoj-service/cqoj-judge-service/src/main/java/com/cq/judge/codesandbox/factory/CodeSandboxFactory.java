@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 代码沙箱工厂
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/08/15
  */
 @ConfigurationProperties(prefix = "codesandbox")

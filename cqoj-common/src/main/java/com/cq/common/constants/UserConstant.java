@@ -3,7 +3,7 @@ package com.cq.common.constants;
 /**
  * 用户常量
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 public interface UserConstant {

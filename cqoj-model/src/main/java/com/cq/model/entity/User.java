@@ -12,7 +12,7 @@ import java.util.Date;
 /**
  * 用户表
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 @TableName(value ="user")

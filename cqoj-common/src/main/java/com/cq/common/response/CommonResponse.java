@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 通用响应类
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 @Data

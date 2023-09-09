@@ -12,15 +12,15 @@ spring:
         - id: cqoj-user-service
           uri: lb://cqoj-user-service
           predicates:
-            - Path=/api/user/**
+            - Path=/oj/user/**
         - id: cqoj-question-service
           uri: lb://cqoj-question-service
           predicates:
-            - Path=/api/question/**
+            - Path=/oj/question/**
         - id: cqoj-judge-service
           uri: lb://cqoj-judge-service
           predicates:
-            - Path=/api/judge/**
+            - Path=/oj/judge/**
 knife4j:
   gateway:
     # ① 第一个配置，开启gateway聚合组件

@@ -17,7 +17,7 @@ import java.nio.charset.StandardCharsets;
 /**
  * 全局身份验证过滤器
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/09/05
  */
 @Component

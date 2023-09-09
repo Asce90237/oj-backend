@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Redisson 配置
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/09/06
  */
 @Configuration

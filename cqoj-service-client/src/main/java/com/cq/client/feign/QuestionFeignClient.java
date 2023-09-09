@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 /**
  * 题目服务
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/09/03
  */
-@FeignClient(name = "cqoj-question-service", path = "/api/question/inner")
+@FeignClient(name = "cqoj-question-service", path = "/oj/question/inner")
 public interface QuestionFeignClient {
 
     @GetMapping("/get/id")

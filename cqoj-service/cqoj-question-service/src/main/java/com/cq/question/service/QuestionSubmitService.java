@@ -13,7 +13,7 @@ import com.cq.model.vo.QuestionSubmitViewVO;
 /**
  * 题目提交服务
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/09/03
  */
 public interface QuestionSubmitService extends IService<QuestionSubmit> {

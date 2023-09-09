@@ -7,7 +7,7 @@ import java.io.Serializable;
 /**
  * 用户注册请求体
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/07/29
  */
 @Data

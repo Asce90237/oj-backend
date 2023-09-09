@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * MyBatis Plus 配置
  *
- * @author 程崎
+ * @author Asce
  * @since 2023/09/03
  */
 @Configuration
