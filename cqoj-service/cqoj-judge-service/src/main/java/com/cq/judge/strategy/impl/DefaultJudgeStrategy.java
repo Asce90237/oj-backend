@@ -32,6 +32,13 @@ public class DefaultJudgeStrategy implements JudgeStrategy {
         judgeInfoResponse.setMemory(memory);
         judgeInfoResponse.setTime(time);
 
+        Integer status = judgeContext.getStatus();
+        if (status == null || status == 2) {
+            judgeInfoMessage = JudgeInfoMessageEnum.COMPILE_ERROR;
+            judgeInfoResponse.setMessage(judgeInfoMessage.getText());
+            return judgeInfoResponse;
+        }
+
         if (outputList.size() != outputListResult.size()) {
             judgeInfoMessage = JudgeInfoMessageEnum.WRONG_ANSWER;
             judgeInfoResponse.setMessage(judgeInfoMessage.getText());

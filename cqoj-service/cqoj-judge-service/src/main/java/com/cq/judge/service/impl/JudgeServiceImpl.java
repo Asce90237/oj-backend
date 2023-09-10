@@ -88,6 +88,7 @@ public class  JudgeServiceImpl implements JudgeService {
 
         List<String> outputListResult = executeCodeResponse.getOutputList();
         JudgeContext judgeContext = new JudgeContext();
+        judgeContext.setStatus(executeCodeResponse.getStatus());
         judgeContext.setJudgeInfo(executeCodeResponse.getJudgeInfo());
         judgeContext.setOutputList(outputList);
         judgeContext.setOutputListResult(outputListResult);

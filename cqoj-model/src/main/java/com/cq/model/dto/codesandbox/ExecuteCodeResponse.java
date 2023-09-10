@@ -20,6 +20,9 @@ import java.util.List;
 @NoArgsConstructor
 public class ExecuteCodeResponse {
 
+    /**
+     * 输出结果
+     */
     private List<String> outputList;
 
     /**
