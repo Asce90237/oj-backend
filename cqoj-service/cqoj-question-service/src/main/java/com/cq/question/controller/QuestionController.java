@@ -34,14 +34,12 @@ import org.redisson.api.RateIntervalUnit;
 import org.redisson.api.RateType;
 import org.redisson.api.RedissonClient;
 import org.springframework.beans.BeanUtils;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpSession;
 import java.util.List;
+import java.util.Objects;
 
 
 /**
@@ -355,5 +353,16 @@ public class QuestionController {
         judgeVO.setTime(ObjectUtil.defaultIfNull(judgeInfo.getTime(), 0) + "ms");
         judgeVO.setMessage(judgeInfo.getMessage());
         return CommonResponse.success(judgeVO);
+    }
+
+    @GetMapping("/question-submit/getHistory")
+    public CommonResponse<String> getHistoryBySubmitId(@RequestParam("submitId") String questionSubmitId, HttpSession session) {
+        QuestionSubmit questionSubmit = questionSubmitService.getById(questionSubmitId);
+        Long userId = questionSubmit.getUserId();
+        User loginUser = userFeignClient.getLoginUser(session);
+        if (loginUser == null || (!Objects.equals(loginUser.getId(), userId) && !UserRoleEnum.ADMIN.equals(loginUser.getUserRole())) || ObjectUtil.isEmpty(questionSubmit)) {
+            return CommonResponse.error(ResultCodeEnum.FORBIDDEN_ERROR);
+        }
+        return CommonResponse.success(questionSubmit.getCode());
     }
 }
