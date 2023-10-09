@@ -83,6 +83,7 @@ public class  JudgeServiceImpl implements JudgeService {
                 .inputList(inputList)
                 .language(languageType)
                 .build();
+        // 代理模式，通过构造函数传递沙箱类型，让代理模式执行指定的方法
         ExecuteCodeResponse executeCodeResponse = new CodeSandboxProxy(codeSandbox).executeCode(request);
         //endregion
 

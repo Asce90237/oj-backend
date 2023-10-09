@@ -7,7 +7,8 @@ import com.cq.model.enums.QuestionSubmitLanguageEnum;
 import org.springframework.stereotype.Service;
 
 /**
- * 判题管理
+ * 判题管理 策略模式
+ * 不同的语言可能需要不同的判题策略，例如c++的执行时间肯定是比Java的时间短，所以Java执行的时间可能需要更长一些
  *
  * @author Asce
  * @since 2023/08/16

@@ -34,6 +34,7 @@ public class JavaJudgeStrategy implements JudgeStrategy {
         judgeInfoResponse.setMemory(memory);
         judgeInfoResponse.setTime(time);
 
+        // 状态码为2 代表编译错误
         Integer status = judgeContext.getStatus();
         if (status == null || status == 2) {
             judgeInfoMessage = JudgeInfoMessageEnum.COMPILE_ERROR;
